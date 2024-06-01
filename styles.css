@@ -110,7 +110,7 @@ footer.attribution {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 1rem; /* Add gap between the items */
+        gap: 1rem;
         margin-top: 20px;
     }
 
@@ -121,7 +121,7 @@ footer.attribution {
 
     .big-heading {
         font-size: 1.7rem;
-    }    
+    }
 }
 
 @media (max-width: 576px) {
@@ -143,6 +143,22 @@ footer.attribution {
     }
 }
 
+/* Styles for screens from 990px to 767px */
+@media (min-width: 767px) and (max-width: 990px) {
+    .order-lg-1 {
+        order: 1 !important;
+    }
+
+    .order-lg-2 {
+        order: 2 !important;
+    }
+
+    .image-container {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
 /* Desktop Styles */
 @media (min-width: 577px) {
     .bg-main {
@@ -156,6 +172,8 @@ footer.attribution {
     .stats {
         display: flex;
         justify-content: flex-start;
+        align-items: flex-start; /* Aligns stats with the rest of the text content */
+        margin-left: 10%; /* Aligns the stats with the text area */
     }
 
     img {
@@ -164,9 +182,16 @@ footer.attribution {
     }
 }
 
+/* Styles for 1263px width */
+@media (min-width: 1263px) and (max-width: 1263px) {
+    .image-overlay {
+        width: 100%; /* Ensure the overlay fits the image width */
+        left: 0; /* Adjust positioning */
+    }
+}
+
 @media (min-width: 1920px) and (max-width: 1920px) {
     .row {
         width: 61%;
     }
 }
-
