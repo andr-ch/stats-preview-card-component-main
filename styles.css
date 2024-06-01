@@ -1,0 +1,172 @@
+body {
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.text-accent {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 7%;
+}
+
+.stats {
+    position: relative;
+    top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stat-item {
+    flex: 1 1 100px;
+    margin: 0 10px;
+}
+
+.stats p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.row {
+    margin: 0;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(277deg 82.86% 35.31% / 53%);
+    border-radius: 10px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    left: 15px;
+}
+
+.queries-section {
+    text-transform: uppercase;
+}
+
+.big-heading {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.text-area {
+    margin: 3% 10%;
+}
+
+/* Footer section */
+footer.attribution {
+    color: ghostwhite;
+    width: 100%;
+    padding: 20px;
+    margin-top: 42px;
+    text-align: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 375px) {
+    .image-container {
+        margin-left: -28px;
+    }
+
+    img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .text-area {
+        text-align: center;
+        margin: 5% 10%;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; /* Add gap between the items */
+        margin-top: 20px;
+    }
+
+    .stat-item {
+        flex: 1 1 100px;
+        margin: 0 10px;
+    }
+
+    .big-heading {
+        font-size: 1.7rem;
+    }    
+}
+
+@media (max-width: 576px) {
+    .bg-main {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 577px) {
+    .bg-main {
+        padding: 5rem 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 1920px) {
+    .row {
+        width: 61%;
+    }
+}
+
