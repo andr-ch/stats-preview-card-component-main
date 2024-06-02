@@ -162,6 +162,10 @@ footer.attribution {
     .container-fluid {
         width: 143%;
     }
+
+    .image-overlay {
+        width: 57%;
+    }
 }
 
 /* Desktop Styles */
