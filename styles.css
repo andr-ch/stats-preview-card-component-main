@@ -81,7 +81,7 @@ p {
 }
 
 .container-fluid {
-    margin-left: 64vh;
+    margin-left: 41vh;
 }
 
 
@@ -167,7 +167,8 @@ footer.attribution {
 
     .container-fluid {
         width: 117%;
-        margin-top: 10%;
+        margin-top: 12vh;
+        margin-left: 14vh;
     }
 
     .image-overlay {
