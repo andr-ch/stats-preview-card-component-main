@@ -161,6 +161,7 @@ footer.attribution {
 
     .container-fluid {
         width: 117%;
+        margin-top: 10%;
     }
 
     .image-overlay {
