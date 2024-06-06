@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-size: 15px;
     background-color: hsl(233, 47%, 7%);
@@ -81,14 +82,12 @@ p {
 }
 
 .container-fluid {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     min-height: 100vh;
     align-items: center;
 }
-
-
 
 /* Footer section */
 footer.attribution {
@@ -105,8 +104,12 @@ footer.attribution {
         margin-left: -28px;
     }
 
-    img {
-        border-radius: 10px 10px 0 0;
+    .img-fluid {
+        border-radius: 10px 10px 0px 0px; /* Updated border radius */
+    }
+
+    .image-overlay {
+        border-radius: 10px 10px 0px 0px; /* Updated border radius */
     }
 
     .text-area {
@@ -153,6 +156,47 @@ footer.attribution {
 }
 
 
+@media (min-width: 409px) and (max-width: 409px) {
+    .image-container {
+        margin-left: -30px;
+        width: 109%;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .image-overlay {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+   .text-area {
+        text-align: center;
+   }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 20px;
+    }
+
+    .stat-item {
+        flex: 1 1 136px;
+        margin: 0 10px;
+    }
+
+    .big-heading {
+        font-size: 1.7rem;
+    }
+}
+
+
+
 /* Styles for screens from 990px to 767px */
 @media (min-width: 767px) and (max-width: 990px) {
     .order-lg-1 {
@@ -167,7 +211,6 @@ footer.attribution {
         margin-left: auto;
         margin-right: 0;
     }
-
 
     .container-fluid {
         width: 117%;
@@ -192,7 +235,6 @@ footer.attribution {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start; /* Aligns stats with the rest of the text content */
-
     }
 
     img {
