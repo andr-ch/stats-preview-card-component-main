@@ -98,8 +98,8 @@ footer.attribution {
     text-align: center;
 }
 
-/* Mobile Styles */
-@media (max-width: 375px) {
+/* Mobile Styles */ 
+@media (min-width: 375px) and (max-width: 375px) {
     .image-container {
         margin-left: -28px;
     }
@@ -154,7 +154,6 @@ footer.attribution {
         display: none;
     }
 }
-
 
 @media (min-width: 409px) and (max-width: 409px) {
     .image-container {
