@@ -156,7 +156,7 @@ footer.attribution {
 }
 
 
-@media (min-width: 600px) and (max-width: 600px) {
+@media only screen and (min-width: 393px) and (max-width: 600px){
     .image-container {
             left: -12px;
             width: 108%;
