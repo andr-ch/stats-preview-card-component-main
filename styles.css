@@ -155,6 +155,32 @@ footer.attribution {
     }
 }
 
+
+@media (min-width: 393px) and (max-width: 393px) {
+    .image-container {
+            left: -12px;
+            width: 108%;
+       }
+       
+       .image-container img {
+           border-radius: 10px 10px 0px 0px;
+        }
+       
+       
+       .image-overlay {
+           border-radius: 10px 10px 0px 0px;
+        }
+       
+       
+       .stat-item {
+            margin: 0 23px;
+       }
+       
+       .text-area {
+            text-align: center;}
+}
+
+
 @media (min-width: 409px) and (max-width: 409px) {
     .image-container {
         margin-left: -30px;
@@ -219,6 +245,24 @@ footer.attribution {
         width: 100%;
     }
 }
+
+@media (min-width: 792px) and (max-width: 792px) {
+    .img-fluid {
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    .image-overlay {
+        border-radius: 0px 10px 10px 0px;}
+    
+    .text-area {
+        text-align: left;}
+    
+    
+    .container-fluid {
+        width: 160%;
+    }
+}
+
 
 /* Desktop Styles */
 @media (min-width: 577px) {
