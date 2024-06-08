@@ -181,6 +181,31 @@ footer.attribution {
 }
 
 
+@media only screen and (max-width: 600px) {
+    .image-container {
+            left: -12px;
+            width: 108%;
+   }
+   
+   .image-container img {
+            border-radius: 10px 10px 0px 0px;
+    }
+   
+   
+   .image-overlay {
+            border-radius: 10px 10px 0px 0px;
+    }
+   
+   
+   .stat-item {
+            margin: 0 23px;
+   }
+   
+   .text-area {
+            text-align: center;}
+}
+
+
 @media (min-width: 409px) and (max-width: 409px) {
     .image-container {
         margin-left: -30px;
