@@ -290,10 +290,15 @@ footer.attribution {
 
 /* Styles for 1263px width */
 @media (min-width: 1263px) and (max-width: 1263px) {
-    .image-overlay {
-        width: 100%; /* Ensure the overlay fits the image width */
-        left: 0; /* Adjust positioning */
+    .image-container {
+        position: relative;
+        left: 25px;
     }
+    
+    .image-overlay {
+        width: 98%;
+    }
+
 }
 
 @media (min-width: 1920px) and (max-width: 1920px) {
