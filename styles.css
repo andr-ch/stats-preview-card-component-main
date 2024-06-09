@@ -286,9 +286,13 @@ footer.attribution {
         max-width: 80%;
         height: auto;
     }
+
+    .row {
+        width: 65rem;
+    }
 }
 
-/* Styles for 1263px width */
+/* Styles for 1263px width 
 @media (min-width: 1263px) and (max-width: 1263px) {
     .image-container {
         position: relative;
@@ -300,7 +304,7 @@ footer.attribution {
     }
 
 }
-
+*/
 @media (min-width: 1920px) and (max-width: 1920px) {
     .row {
         width: 61%;
