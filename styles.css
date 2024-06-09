@@ -269,7 +269,7 @@ footer.attribution {
 /* Desktop Styles */
 @media (min-width: 577px) {
     .bg-main {
-        padding: 5rem 4rem;
+        padding: 5rem 3rem;
     }
 
     h1 {
