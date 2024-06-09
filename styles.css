@@ -1,107 +1,114 @@
 /* General styles */
 body {
-    font-size: 15px;
-    background-color: hsl(233, 47%, 7%);
-    color: hsl(0, 0%, 100%);
-    margin: 0;
-    padding: 0;
+    font-size: 15px; /* Set base font size */
+    background-color: hsl(233, 47%, 7%); /* Set background color */
+    color: hsl(0, 0%, 100%); /* Set text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; /* Set font family for headings */
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.5rem; /* Set font size for h2 */
+    font-weight: 700; /* Set font weight for h2 */
 }
 
 .text-accent {
-    color: hsl(277, 64%, 61%);
+    color: hsl(277, 64%, 61%); /* Set accent color */
 }
 
 p {
-    font-family: "Lexend Deca", sans-serif;
-    color: hsla(0, 0%, 100%, 0.75);
-    margin-top: 7%;
+    font-family: "Lexend Deca", sans-serif; /* Set font family for paragraphs */
+    color: hsla(0, 0%, 100%, 0.75); /* Set text color for paragraphs */
+    margin-top: 7%; /* Set top margin for paragraphs */
 }
 
+/* Headings */
+.big-heading {
+    font-size: 37px; /* Set font size for main heading */
+    font-weight: 700; /* Set font weight for main heading */
+}
+
+/* Containers */
+.container-fluid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+    min-height: 100vh; /* Set minimum height */
+    align-items: center; /* Center items vertically */
+}
+
+/* Stats section */
 .stats {
-    position: relative;
-    top: 42px;
-    display: flex;
-    flex-wrap: wrap;
+    position: relative; /* Position relative for absolute positioning */
+    top: 42px; /* Move down from top */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 
 .stat-item {
-    flex: 1 1 100px;
-    margin: 0 10px;
+    flex: 1 1 100px; /* Set flex properties */
+    margin: 0 10px; /* Set margin */
 }
 
 .stats p {
-    color: hsla(0, 0%, 100%, 0.6);
-    font-size: 13px;
-    font-weight: 200;
+    color: hsla(0, 0%, 100%, 0.6); /* Set color for stats paragraphs */
+    font-size: 13px; /* Set font size */
+    font-weight: 200; /* Set font weight */
 }
 
+/* Row styles */
 .row {
-    margin: 0;
-    background-color: hsl(244, 38%, 16%);
-    border-radius: 10px;
+    margin: 0; /* Remove default margin */
+    background-color: hsl(244, 38%, 16%); /* Set background color */
+    border-radius: 10px; /* Set border radius */
 }
 
+/* Image styles */
 .image-overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: hsl(277deg 82.86% 35.31% / 53%);
-    border-radius: 0px 10px 10px 0px;
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: hsl(277deg 82.86% 35.31% / 53%); /* Set overlay color */
+    border-radius: 0px 10px 10px 0px; /* Set border radius */
 }
 
 .img-fluid {
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px; /* Set border radius for image */
 }
 
 .image-container {
-    position: relative;
-    left: 15px;
+    position: relative; /* Position relative for absolute positioning */
+    left: 15px; /* Move left */
 }
 
+/* Queries section */
 .queries-section {
-    text-transform: uppercase;
+    text-transform: uppercase; /* Uppercase text */
 }
 
-.big-heading {
-    font-size: 37px;
-    font-weight: 700;
-}
-
+/* Text area */
 .text-area {
-    margin: 3% 10%;
-}
-
-.container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
+    margin: 3% 10%; /* Set margin */
 }
 
 /* Footer section */
 footer.attribution {
-    color: ghostwhite;
-    width: 100%;
-    padding: 20px;
-    margin-top: 42px;
-    text-align: center;
+    color: ghostwhite; /* Set text color */
+    width: 100%; /* Full width */
+    padding: 20px; /* Set padding */
+    margin-top: 42px; /* Set top margin */
+    text-align: center; /* Center text */
 }
 
 /* Mobile Styles */ 
 @media (min-width: 375px) and (max-width: 375px) {
     .image-container {
-        margin-left: -28px;
+        margin-left: -28px; /* Adjust margin */
     }
 
     .img-fluid {
@@ -113,200 +120,185 @@ footer.attribution {
     }
 
     .text-area {
-        text-align: center;
-        margin: 5% 10%;
+        text-align: center; /* Center text */
+        margin: 5% 10%; /* Adjust margin */
     }
 
     .stats {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 20px;
+        display: flex; /* Use flexbox for layout */
+        flex-direction: row; /* Row direction */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items */
+        gap: 1rem; /* Set gap between items */
+        margin-top: 20px; /* Set top margin */
     }
 
     .stat-item {
-        flex: 1 1 100px;
-        margin: 0 10px;
+        flex: 1 1 100px; /* Set flex properties */
+        margin: 0 10px; /* Set margin */
     }
 
     .big-heading {
-        font-size: 1.7rem;
+        font-size: 1.7rem; /* Adjust font size */
     }
 }
 
+/* Styles for screens less than 576px */
 @media (max-width: 576px) {
     .bg-main {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem; /* Adjust padding */
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Adjust font size */
     }
 
     img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100%; /* Full width */
+        height: auto; /* Auto height */
     }
 
     footer {
-        display: none;
+        display: none; /* Hide footer */
     }
 }
 
-
+/* Styles for screens between 393px and 600px */
 @media (min-width: 393px) and (max-width: 600px){
     .image-container {
-            left: -12px;
-            width: 108%;
-       }
+        left: -12px; /* Adjust position */
+        width: 108%; /* Adjust width */
+    }
        
-       .image-container img {
-           border-radius: 10px 10px 0px 0px;
-        }
+    .image-container img {
+        border-radius: 10px 10px 0px 0px; /* Set border radius */
+    }
        
+    .image-overlay {
+        border-radius: 10px 10px 0px 0px; /* Set border radius */
+    }
        
-       .image-overlay {
-           border-radius: 10px 10px 0px 0px;
-        }
+    .stat-item {
+        margin: 0 23px; /* Adjust margin */
+    }
        
-       
-       .stat-item {
-            margin: 0 23px;
-       }
-       
-       .text-area {
-            text-align: center;}
+    .text-area {
+        text-align: center; /* Center text */
+    }
 }
 
-
-
-
+/* Styles for screens of width 409px */
 @media (min-width: 409px) and (max-width: 409px) {
     .image-container {
-        margin-left: -30px;
-        width: 109%;
+        margin-left: -30px; /* Adjust margin */
+        width: 109%; /* Adjust width */
     }
 
     .img-fluid {
-        width: 100%;
-        height: auto;
-        border-radius: 10px 10px 0px 0px;
+        width: 100%; /* Full width */
+        height: auto; /* Auto height */
+        border-radius: 10px 10px 0px 0px; /* Set border radius */
     }
 
     .image-overlay {
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px 10px 0px 0px; /* Set border radius */
     }
 
-   .text-area {
-        text-align: center;
-   }
+    .text-area {
+        text-align: center; /* Center text */
+    }
 
     .stats {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 20px;
+        display: flex; /* Use flexbox for layout */
+        flex-direction: row; /* Row direction */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items */
+        gap: 1rem; /* Set gap between items */
+        margin-top: 20px; /* Set top margin */
     }
 
     .stat-item {
-        flex: 1 1 136px;
-        margin: 0 10px;
+        flex: 1 1 136px; /* Set flex properties */
+        margin: 0 10px; /* Set margin */
     }
 
     .big-heading {
-        font-size: 1.7rem;
+        font-size: 1.7rem; /* Adjust font size */
     }
 }
-
-
 
 /* Styles for screens from 990px to 767px */
 @media (min-width: 767px) and (max-width: 990px) {
     .order-lg-1 {
-        order: 1 !important;
+        order: 1 !important; /* Adjust order */
     }
 
     .order-lg-2 {
-        order: 2 !important;
+        order: 2 !important; /* Adjust order */
     }
 
     .image-container {
-        margin-left: auto;
-        margin-right: 0;
+        margin-left: auto; /* Adjust margin */
+        margin-right: 0; /* Adjust margin */
     }
 
     .container-fluid {
-        width: 117%;
+        width: 117%; /* Adjust width */
     }
 
     .image-overlay {
-        width: 100%;
+        width: 100%; /* Full width */
     }
 }
 
+/* Styles for screens of width 792px */
 @media (min-width: 792px) and (max-width: 792px) {
     .img-fluid {
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 10px 10px 0px; /* Set border radius */
     }
     
     .image-overlay {
-        border-radius: 0px 10px 10px 0px;}
+        border-radius: 0px 10px 10px 0px; /* Set border radius */
+    }
     
     .text-area {
-        text-align: left;}
-    
+        text-align: left; /* Align text left */
+    }
     
     .container-fluid {
-        width: 160%;
+        width: 160%; /* Adjust width */
     }
 }
-
 
 /* Desktop Styles */
 @media (min-width: 577px) {
     .bg-main {
-        padding: 5rem 3rem;
+        padding: 5rem 3rem; /* Set padding */
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Set font size */
     }
 
     .stats {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start; /* Aligns stats with the rest of the text content */
+        display: flex; /* Use flexbox for layout */
+        justify-content: flex-start; /* Align items to start */
+        align-items: flex-start; /* Align items to start */
     }
 
     img {
-        max-width: 80%;
-        height: auto;
+        max-width: 80%; /* Adjust width */
+        height: auto; /* Auto height */
     }
 
     .row {
-        width: 65rem;
+        width: 65rem; /* Set width */
     }
 }
 
-/* Styles for 1263px width 
-@media (min-width: 1263px) and (max-width: 1263px) {
-    .image-container {
-        position: relative;
-        left: 25px;
-    }
-    
-    .image-overlay {
-        width: 98%;
-    }
-
-}
-*/
+/* Styles for screens of width 1920px */
 @media (min-width: 1920px) and (max-width: 1920px) {
     .row {
-        width: 61%;
+        width: 61%; /* Set width */
     }
 }
