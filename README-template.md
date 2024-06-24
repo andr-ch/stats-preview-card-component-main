@@ -44,8 +44,6 @@ Users should be able to:
 - Flexbox
 - Bootstrap 4.6.2 - For responsive design and styling
 - Mobile-first workflow
-- [jQuery](https://jquery.com/) - JS library
-- [Popper.js](https://popper.js.org/) - For tooltip and popover positioning
 - [Google Fonts](https://fonts.google.com/) - Custom fonts (`Inter` and `Lexend Deca`)
 
 
